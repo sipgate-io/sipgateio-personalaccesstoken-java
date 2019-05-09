@@ -65,6 +65,8 @@ HttpResponse<String> response = Unirest.get(baseUrl + "/account")
 	System.out.println("Body: " + response.getBody());
 ```
 
+> If OAuth should be used for authorization instead of Basic Auth we do not use the `.basicAuth(username, password)` mehthod. Instead we set the `Authorization` header to `Bearer` followed by a space and the access token: `.header("Authorization", "Bearer " + accessToken)`. For an example application interacting with the sipgate API using OAuth see our [sipgate.io Java Oauth example](https://github.com/sipgate-io/sipgateio-oauth-java).
+
 
 ### Basic Auth
 Basic access authentication (Basic Auth) is an easy to use, well known, and well supported authentication method. 
