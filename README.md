@@ -11,16 +11,10 @@ For further information regarding sipgate REST API please visit https://api.sipg
 
 ### Prerequisites
 + JDK 8
-+ Maven
 
 
 ### How To Use
 Navigate to the project's root directory.
-
-Install dependencies manually or use your IDE's import functionality:
-```bash
-$ mvn dependency:resolve
-```
 
 Change username and password in BasicAuthExample.java:
 ```java
@@ -28,16 +22,11 @@ String username = "YOUR_SIPGATE_EMAIL";
 String password = "YOUR_SIPGATE_PASSWORD";
 ```
 
-Build JAR
-```bash
-$ mvn package
-```
 
 Run the application:
 ```bash
-$ java -jar target/sipgateio-basicauth-java-1.0-SNAPSHOT-jar-with-dependencies.jar
+./gradlew run
 ```
-
 
 ### How It Works
 Request parameters like url and credentials are defined as follows:

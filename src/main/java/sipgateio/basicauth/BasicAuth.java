@@ -1,4 +1,4 @@
-package de.sipgate.io.example;
+package sipgateio.basicauth;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
