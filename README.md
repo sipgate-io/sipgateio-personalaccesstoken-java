@@ -23,6 +23,8 @@ Change token id and token in PersonalAccessToken.java:
 String tokenId = "YOUR_SIPGATE_TOKEN_ID";
 String token = "YOUR_SIPGATE_TOKEN";
 ```
+The token should have the `account:read` scope.
+
 
 Run the application:
 
