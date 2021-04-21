@@ -1,4 +1,4 @@
-package sipgateio.basicauth;
+package sipgateio.personalaccesstoken;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -7,14 +7,14 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import java.util.Base64;
 
 
-public class BasicAuth {
+public class PersonalAccessToken {
 	private static final String baseUrl = "https://api.sipgate.com/v2";
 
 	public static void main(String[] args) {
-		String username = "YOUR_SIPGATE_EMAIL";
-		String password = "YOUR_SIPGATE_PASSWORD";
+		String tokenId = "SIPGATE_TOKEN_ID";
+		String token = "SIPGATE_TOKEN";
 
-		String credentials = username + ":" + password;
+		String credentials = tokenId + ":" + token;
 		String base64EncodedCredentials = Base64.getEncoder().encodeToString(credentials.getBytes());
 
 		try {

@@ -12,8 +12,8 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
 }
 
-group = 'sipgateio.basicauth'
+group = 'sipgateio.personalaccesstoken'
 version = '1.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
-mainClassName = 'sipgateio.basicauth.BasicAuth'
+mainClassName = 'sipgateio.personalaccesstoken.PersonalAccessToken'
